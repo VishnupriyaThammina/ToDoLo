@@ -1,12 +1,10 @@
 import React from "react";
-import { TextField, Grid, Button, Box, Typography } from '@mui/material';
+import { TextField, Grid, Button } from '@mui/material';
 import { useState } from "react";
 import Task from "../components/Task";
 import { useEffect } from "react";
-import { DragDropContext } from 'react-beautiful-dnd';
 
 export default function ToDoLo() {
-    const temp = JSON.parse(localStorage.getItem('Sign-up-deets'))
 
     const [task, setTask] = useState("");
     const [todos, setTodos] = useState([]);
@@ -93,7 +91,7 @@ export default function ToDoLo() {
 
 
                 {todos.map(function (todo, index) {
-                    return <li key={index} style={{ listStyleType: "none" }}>  <Task taskie={todo} todosAr={todos} del={()=>del(index)} editt={editt} setEdit={setEdit} edittask={() => edittask(index)} setChecked={setChecked} /></li>;
+                    return <li key={index} style={{ listStyleType: "none" }}>  <Task taskie={todo} todosAr={todos} del={()=>del(index)} editt={editt} checked={checked} setEdit={setEdit} edittask={() => edittask(index)} setChecked={setChecked} /></li>;
                 })}</ul>
 
         </>

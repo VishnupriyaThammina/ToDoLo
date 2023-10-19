@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter, Navigate, Route, Routes,Switch } from 'react-router-dom';
-import { createTheme, ThemeProvider } from '@mui/material';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import {  ThemeProvider } from '@mui/material';
 import Navbar from './components/Navbar';
 import Login from './pages/Login';
 import ToDoLo from './pages/TodoLo';
