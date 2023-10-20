@@ -1,5 +1,5 @@
 # ToDoLo
-https://todolo.netlify.app/signup
+
 1. Download the zip file
 2. extract the folder
 3. to run use: npm start
